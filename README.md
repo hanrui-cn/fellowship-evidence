@@ -1,17 +1,15 @@
-# Fellowship application evidence (FBCS)
+# Fellowship application evidence (Ray Han)
 
-All-English, claim-to-evidence pack for the BCS Fellowship application and the
-assessor discussion (all applications follow the interview route from
-1 October 2026 — the interview is a discussion of the written evidence with a
-BCS assessor).
+All-English evidence pack for the BCS Fellowship application, published at
+https://hanrui-cn.github.io/fellowship-evidence/
 
 ## Structure
 
 ```
 dossier/
-├── index.html                 # Open in a browser. Organised by matter-to-be-proved:
-│                              #   each proposition with layered evidence
-│                              #   (primary document → corroboration → public trace)
+├── index.html                 # Open in a browser. Four sections — one per submitted
+│                              #   statement — each with its evidence grouped by the
+│                              #   results it proves (R1, R2, R3), strongest first
 ├── README.md                  # This file
 └── assets/
     ├── english-renderings.md  # English renderings of Chinese-language originals, with page references
@@ -25,9 +23,9 @@ dossier/
 - External links open in a new window. Sources that are unreachable or
   bot-blocked are offered as local copies only.
 - Signed originals of all third-party letters are held by the applicant;
-  missing scans are flagged in "Outstanding items".
+  items expected but not yet on file are marked inline in italics.
 - Chinese-language originals are authoritative; the English renderings in
   assets/english-renderings.md are translations with page references.
 
-Open `index.html` — the pack is self-contained and prints cleanly (matters
-print one per section; submitted statements stay collapsed).
+Open `index.html` — the pack is self-contained and prints cleanly (one
+section per page; submitted statements stay collapsed).
