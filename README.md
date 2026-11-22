@@ -1,31 +1,42 @@
-# Fellowship application evidence (Ray Han)
+# FBCS Fellowship evidence (Ray Han)
 
-All-English evidence pack for the BCS Fellowship application, published at
+All-English evidence index for the BCS Fellowship application, published at
 https://hanrui-cn.github.io/fellowship-evidence/
 
 ## Structure
 
 ```
 dossier/
-├── index.html                 # Open in a browser. Four sections — one per submitted
-│                              #   statement — each with its evidence grouped by the
-│                              #   results it proves (R1, R2, R3), strongest first
+├── index.html                 # Four criterion sections, with a previous-submission
+│                              #   outcome table, collapsed submitted statements and
+│                              #   concise evidence proof points
+├── robots.txt                 # Disallow search-engine crawling
 ├── README.md                  # This file
 └── assets/
-    ├── english-renderings.md  # English renderings of Chinese-language originals, with page references
-    ├── *.pdf / *.md           # Evidence documents (certificates, standards, letters, reports)
-    └── web/                   # Full-page screenshots of public records + downloaded originals
+    ├── publications.html    # Seven papers, roles, venue records and local PDFs
+    ├── patents.html         # Complete 18-record patent list
+    ├── papers/              # Six full papers plus the HELDR first-page record
+    ├── english-renderings.md  # English renderings of Chinese-language originals
+    ├── *.pdf / *.md           # Evidence documents
+    └── web/                   # Archived public records and downloaded originals
 ```
 
 ## Conventions
 
-- Papers and works link first to ray-han.com/work, secondarily to Google Scholar.
-- External links open in a new window. Sources that are unreachable or
-  bot-blocked are offered as local copies only.
-- Signed originals of all third-party letters are held by the applicant;
-  items expected but not yet on file are marked inline in italics.
-- Chinese-language originals are authoritative; the English renderings in
-  assets/english-renderings.md are translations with page references.
+- The page is an assessor-facing evidence index, not an evidence audit. Keep the
+  first layer short: criterion category, previous outcome, one-sentence proof point
+  and the decisive document link.
+- The four submitted statements are frozen. They remain collapsed and must not be
+  edited as part of dossier changes.
+- Group evidence under the submitted R1–R3 results where useful. Merge rows that
+  prove the same outcome; do not repeat letters, quotations or cross-references.
+- Do not use the main page to reconcile names, dates or source discrepancies, or to
+  quote full letters. Open the evidence document for detail.
+- File and external links open in a new tab. Keep local archives available without
+  displaying every mirror alongside each primary source.
+- `index.html` and `assets/patents.html` carry `noindex, nofollow`; `robots.txt`
+  disallows crawling across the published evidence site.
+- Chinese-language originals are authoritative; English renderings are in
+  `assets/english-renderings.md`.
 
-Open `index.html` — the pack is self-contained and prints cleanly (one
-section per page; submitted statements stay collapsed).
+Open `index.html` in a browser. The page is self-contained, responsive and printable.

@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fellowship application evidence · Ray Han</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>FBCS Fellowship evidence · Ray Han</title>
 <style>
   :root{
     --paper:#faf9f7; --card:#ffffff; --ink:#1c2530; --muted:#68727e; --line:#e4e0d6;
@@ -14,27 +15,42 @@
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.65}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6}
   a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(15,76,129,.35)}
   a:hover{border-bottom-color:var(--accent)}
+  section,[id]{scroll-margin-top:24px}
 
-  .layout{display:grid;grid-template-columns:200px minmax(0,1fr);max-width:1180px;margin:0 auto;gap:40px}
+  .layout{display:grid;grid-template-columns:190px minmax(0,1fr);max-width:1120px;margin:0 auto;gap:40px}
   nav.side{position:sticky;top:0;align-self:start;height:100vh;padding:32px 0;overflow-y:auto}
   nav.side .brand{font-weight:700;font-size:15px;line-height:1.4;margin-bottom:18px}
-  nav.side a{display:block;border:none;padding:5px 0;color:var(--muted);font-size:14px}
-  nav.side a:hover{color:var(--accent)}
+  nav.side a{display:block;border:none;border-left:3px solid transparent;border-radius:0 5px 5px 0;padding:6px 10px;color:var(--muted);font-size:14px;transition:background .15s,color .15s,border-color .15s}
+  nav.side a:hover{color:var(--accent);background:rgba(15,76,129,.05)}
+  nav.side a.active{color:var(--accent);background:rgba(15,76,129,.10);border-left-color:var(--accent);font-weight:700}
 
-  main{padding:40px 0 90px;min-width:0}
-  header.hero{border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:8px}
+  main{padding:40px 0 80px;min-width:0}
+  header.hero{border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:22px}
   header.hero h1{font-family:var(--serif);font-size:30px;font-weight:600;margin:0 0 6px}
   header.hero .meta{color:var(--muted);font-size:14px}
 
-  section{margin-top:56px}
-  h2.sec{font-family:var(--serif);font-size:25px;font-weight:600;margin:0 0 6px}
-  .secline{border:0;border-top:1px solid var(--line);margin:0 0 20px}
+  .review{margin-bottom:12px}
+  .review h2{font-size:15px;margin:0 0 8px}
+  .review h2 span{font-weight:400;color:var(--muted)}
+  table.outcomes{width:100%;border-collapse:collapse;background:var(--card);font-size:13.5px;line-height:1.45}
+  .outcomes th{text-align:left;color:var(--muted);font-size:12px;font-weight:600;border-bottom:1px solid var(--ink);padding:7px 12px}
+  .outcomes td{border-bottom:1px solid var(--line);padding:8px 12px;vertical-align:top}
+  .outcomes tr:last-child td{border-bottom:0}
+  .outcomes td:first-child{width:29%}
+  .outcomes td:nth-child(2){width:23%;white-space:nowrap}
 
-  details.stmt{border:1px solid var(--line);border-radius:10px;background:var(--card);margin:0 0 22px}
-  details.stmt summary{cursor:pointer;padding:10px 16px;font-size:14px;color:var(--accent);list-style:none}
+  section{margin-top:46px}
+  .sechead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:16px}
+  .category{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  h2.sec{font-family:var(--serif);font-size:25px;font-weight:600;margin:0}
+  .previous{font-size:12.5px;color:var(--muted);white-space:nowrap;padding-bottom:3px}
+  .previous strong{color:var(--ink)}
+
+  details.stmt{border:1px solid var(--line);border-radius:9px;background:var(--card);margin:0 0 16px}
+  details.stmt summary{cursor:pointer;padding:9px 15px;font-size:13.5px;color:var(--accent);list-style:none}
   details.stmt summary::before{content:"▸ ";font-size:11px}
   details.stmt[open] summary::before{content:"▾ "}
   details.stmt .body{padding:2px 24px 16px;font-family:var(--serif);font-size:15px;line-height:1.75}
@@ -42,33 +58,41 @@
   details.stmt .body p{margin:0 0 10px}
   details.stmt .rhead{font-family:var(--sans);font-weight:700;font-size:14px}
   details.stmt .fn{font-size:13.5px;color:var(--muted);font-style:italic}
+  details.stmt .rhead a{color:var(--accent);border-bottom:1px dotted rgba(15,76,129,.5)}
 
-  .rgroup{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 24px 8px;margin:0 0 18px}
-  .rgroup .rtop{display:flex;align-items:baseline;gap:12px;margin-bottom:2px}
-  .rid{font-family:var(--mono);font-size:14px;font-weight:700;color:#fff;background:var(--accent);border-radius:5px;padding:1px 10px}
+  .rgroup{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:14px 20px 5px;margin:0 0 12px}
+  .rgroup .rtop{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+  .rid{font-family:var(--mono);font-size:12px;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:1px 8px;white-space:nowrap}
   .rgroup.action .rid{background:var(--muted)}
-  .rgroup .rtitle{font-weight:700;font-size:17px;line-height:1.4}
-  .rclaim{font-family:var(--serif);font-style:italic;font-size:14.5px;color:#43505f;margin:2px 0 12px}
+  .rgroup .rtitle{font-weight:700;font-size:16px;line-height:1.4}
 
   ul.evlist{list-style:none;margin:0;padding:0}
-  ul.evlist li{padding:11px 0 11px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.6}
+  ul.evlist li{padding:9px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.5}
   ul.evlist li:first-child{border-top:0}
-  .src{font-weight:600}
-  .says{color:#333f4d;margin:2px 0}
-  .quote{font-style:italic;color:#333f4d}
-  .note{font-size:13.5px;color:var(--muted)}
-  .lnk{font-size:13.5px;margin-top:3px}
-  .lnk a{margin-right:14px;white-space:nowrap}
+  .src{font-weight:650}
+  .says{color:#43505f;margin:1px 0}
+  .note{font-size:12.5px;color:var(--muted)}
+  .lnk{font-size:12.5px;margin-top:3px}
+  .lnk a{margin-right:13px;white-space:nowrap}
 
-  footer{margin-top:70px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:13px}
+  footer{margin-top:50px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted);font-size:12.5px}
 
   @media (max-width:900px){
     .layout{grid-template-columns:1fr;gap:0}
     nav.side{position:static;height:auto;padding:18px 18px 6px}
-    nav.side a{display:inline-block;margin-right:16px}
+    nav.side .brand{margin-bottom:8px}
+    nav.side a{display:inline-block;margin-right:10px;border-left:0;border-radius:5px;padding:5px 8px}
     main{padding:10px 18px 60px}
-    .rgroup{padding:14px 16px 4px}
+    .outcomes th,.outcomes td{padding:7px 8px}
+    .rgroup{padding:12px 15px 4px}
     details.stmt .body{padding:2px 16px 12px}
+  }
+  @media (max-width:600px){
+    .sechead{align-items:flex-start;flex-direction:column;gap:3px}
+    .previous{padding-bottom:0;white-space:normal}
+    .outcomes{font-size:12px}
+    .outcomes td:first-child,.outcomes td:nth-child(2){width:auto}
+    .outcomes td:nth-child(2){white-space:normal}
   }
   @media print{
     nav.side{display:none}
@@ -82,8 +106,9 @@
 <body>
 <div class="layout">
 
-<nav class="side">
-  <div class="brand">Fellowship application evidence<br>Ray Han</div>
+<nav class="side" aria-label="Evidence sections">
+  <div class="brand">FBCS Fellowship evidence</div>
+  <a href="#previous">Previous application</a>
   <a href="#innovation">Invention and innovation</a>
   <a href="#mentoring">Mentoring and coaching</a>
   <a href="#awards">Awards</a>
@@ -93,14 +118,29 @@
 <main>
 
 <header class="hero">
-  <h1>Fellowship application evidence</h1>
-  <div class="meta">Ray Han · ray@ray-han.com — evidence for the four submitted statements, grouped by result.</div>
+  <h1>FBCS Fellowship evidence</h1>
+  <div class="meta">Ray Han (Rui Han / Han Rui; Chinese: 韩锐) · <a href="mailto:ray@ray-han.com">ray@ray-han.com</a></div>
 </header>
+
+<div class="review" id="previous">
+  <h2>Previous application <span>25 September 2026</span></h2>
+  <table class="outcomes">
+    <thead><tr><th>Criterion</th><th>Outcome</th><th>This application</th></tr></thead>
+    <tbody>
+      <tr><td><a href="#innovation">Invention and innovation</a></td><td><strong>Above</strong></td><td>No material change</td></tr>
+      <tr><td><a href="#mentoring">Mentoring and coaching</a></td><td><strong>Met</strong><div class="note">Xie letter not supplied.<br>Assessor indicated Above with it.</div></td><td>Signed Xie letter added</td></tr>
+      <tr><td><a href="#awards">Awards</a></td><td><strong>Insufficient evidence</strong><div class="note">Awards fully recognised.<br>Follow-on impact missing.</div></td><td>NYU and CAICT roles added</td></tr>
+      <tr><td><a href="#entrepreneurship">Entrepreneurship</a></td><td><strong>Not submitted</strong></td><td>New criterion, statement and evidence</td></tr>
+    </tbody>
+  </table>
+</div>
 
 <!-- ============ 1 INNOVATION ============ -->
 <section id="innovation">
-  <h2 class="sec">Invention and innovation</h2>
-  <hr class="secline">
+  <div class="sechead">
+    <div><div class="category">Body of work</div><h2 class="sec">Invention and innovation</h2></div>
+    <div class="previous">Previous application: <strong>Above</strong></div>
+  </div>
 
   <details class="stmt"><summary>Submitted statement</summary><div class="body">
     <h3>Situation</h3>
@@ -113,60 +153,59 @@
     <p>Using these methods, I developed one delivery framework for on-demand, live and real-time media. For on-demand video, I designed CDN-edge coordination for fast start-up and fallback to the CDN when edge resources cannot sustain playback. For live streaming, I built a redundancy-free architecture combining distributed frame sequencing with playback-deadline loss recovery.</p>
     <p>I extended these methods to media-network measurement and distributed inference.</p>
     <h3>Result</h3>
-    <p><span class="rhead">R1 Scale, cost and performance.</span> HyperEdge serves over two billion daily active users on TikTok and Douyin, delivering up to 60 Tbps from over 500,000 devices. During the 2022 World Cup, the network absorbed 80 Tbps of burst traffic without straining the ISP backbone. It has saved over three billion US dollars against commercial CDN pricing. In A/B tests, it matched commercial CDN performance. The live system tripled capacity and cut rebuffering by 15%.</p>
-    <p><span class="rhead">R2 Standards leadership.</span> At the China Communications Standards Association (CCSA), China's national communications standards body, I am a drafter of two draft standards covering transmission feedback and cross-layer bitrate adaptation. I work on these with Beijing University of Posts and Telecommunications and Xi'an Jiaotong University. I lead two further drafts awaiting ministry review, with China Unicom, one of China's three national carriers, as a joint drafter.</p>
-    <p><span class="rhead">R3 Research and patents.</span> The work yielded 18 China and U.S. patents, four as first or sole inventor. It helped secure RMB 3 million under China's National Key R&amp;D Program (2022–2025), with HyperEdge serving as the validation platform. The HyperEdge paper won the USENIX NSDI 2026 Best Paper Award, with five further papers from my team at SIGCOMM 2026, EuroSys 2026, INFOCOM 2024, IEEE Network and IWQoS 2025.</p>
+    <p><span class="rhead"><a href="#innovation-r1">R1 Scale, cost and performance.</a></span> HyperEdge serves over two billion daily active users on TikTok and Douyin, delivering up to 60 Tbps from over 500,000 devices. During the 2022 World Cup, the network absorbed 80 Tbps of burst traffic without straining the ISP backbone. It has saved over three billion US dollars against commercial CDN pricing. In A/B tests, it matched commercial CDN performance. The live system tripled capacity and cut rebuffering by 15%.</p>
+    <p><span class="rhead"><a href="#innovation-r2">R2 Standards leadership.</a></span> At the China Communications Standards Association (CCSA), China's national communications standards body, I am a drafter of two draft standards covering transmission feedback and cross-layer bitrate adaptation. I work on these with Beijing University of Posts and Telecommunications and Xi'an Jiaotong University. I lead two further drafts awaiting ministry review, with China Unicom, one of China's three national carriers, as a joint drafter.</p>
+    <p><span class="rhead"><a href="#innovation-r3">R3 Research and patents.</a></span> The work yielded 18 China and U.S. patents, four as first or sole inventor. It helped secure RMB 3 million under China's National Key R&amp;D Program (2022–2025), with HyperEdge serving as the validation platform. The HyperEdge paper won the USENIX NSDI 2026 Best Paper Award, with five further papers from my team at SIGCOMM 2026, EuroSys 2026, INFOCOM 2024, IEEE Network and IWQoS 2025.</p>
   </div></details>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R1</span><span class="rtitle">Scale, cost and performance</span></div>
-    <p class="rclaim">“HyperEdge serves over two billion daily active users on TikTok and Douyin … saved over three billion US dollars … The live system tripled capacity and cut rebuffering by 15%.”</p>
+  <div class="rgroup" id="innovation-r1">
+    <div class="rtop"><span class="rid">R1</span><span class="rtitle">Scale and performance</span></div>
     <ul class="evlist">
-      <li><span class="src">HyperEdge paper, USENIX NSDI '26 — peer-reviewed record of the system and its measured results.</span>
-        <div class="says">The official presentation page carries the author line “Rui Han, ByteDance”.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/web/nsdi26-wei-paper.pdf">Paper PDF</a><a target="_blank" rel="noopener" href="https://www.usenix.org/system/files/nsdi26-wei.pdf">usenix.org</a><a target="_blank" rel="noopener" href="https://www.usenix.org/conference/nsdi26/presentation/wei">USENIX page</a><a target="_blank" rel="noopener" href="assets/web/usenix-nsdi26-hyperedge.png">Screenshot</a></div></li>
-      <li><span class="src">Support letter, Zhendong Xie, Senior Engineer, ByteDance — Ray Han's direct report for 4.5 years (filed under Mentoring · R1).</span>
-        <div class="says quote">“HyperEdge operates ByteDance's low-cost content delivery network, powering video-on-demand and live-streaming services for Douyin and TikTok across domestic and international markets.”</div></li>
-      <li><span class="src">LiveVideoStackCon 2023 speaker page — invited talk on this work (“Han Rui, ByteDance”).</span>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://www.bagevent.com/event/8663292">bagevent.com</a><a target="_blank" rel="noopener" href="assets/web/lvscon2023-hanrui.png">Screenshot</a></div></li>
+      <li><span class="src">HyperEdge paper</span>
+        <div class="says">USENIX NSDI 2026. Peer-reviewed system design and measured production results.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/web/nsdi26-wei-paper.pdf">Paper PDF</a><a target="_blank" rel="noopener" href="https://www.usenix.org/conference/nsdi26/presentation/wei">USENIX record</a></div></li>
+      <li><span class="src">Shenyi Song support email</span>
+        <div class="says">Chief Architect, Enterprise AI Security Platform, TikTok. Confirms Ray Han's HyperEdge leadership, cost reduction and stable delivery at the 2022 World Cup peak. Sent directly to the BCS Fellowship team by Song for the previous application.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/song-shenyi-support-email-2026-09.md">Full email</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/shenyi-song-62a3b56b/">LinkedIn</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
+  <div class="rgroup" id="innovation-r2">
     <div class="rtop"><span class="rid">R2</span><span class="rtitle">Standards leadership</span></div>
-    <p class="rclaim">“I am a drafter of two draft standards … I lead two further drafts awaiting ministry review, with China Unicom … as a joint drafter.”</p>
     <ul class="evlist">
-      <li><span class="src">Two CCSA draft standards listing Han Rui among the principal drafters.</span>
-        <div class="says">Transport-layer feedback for real-time streaming in wireless LANs, and video bitrate adaptation based on cross-layer collaboration. Front matter lists “Han Rui” among the principal drafters. Lead organisations: Volcano Engine, BUPT and Xi'an Jiaotong University.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/ccsa-transport-feedback.pdf">Feedback draft</a><a target="_blank" rel="noopener" href="assets/ccsa-video-bitrate.pdf">Bitrate draft</a></div></li>
-      <li><span class="src">Two CCSA project proposals naming Han Rui project leader, submitted by Volcano Engine under its official seal — the resulting standards are now at communication-industry (YD) review stage under the Ministry of Industry and Information Technology.</span>
-        <div class="says">Topics: multipath packet scheduling, and NAT device behaviour detection. The draft covers are marked “draft for review”.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/ccsa-proposals-scheduling-nat.pdf">Proposals PDF</a><a target="_blank" rel="noopener" href="assets/ccsa-packet-scheduling.pdf">Scheduling draft</a><a target="_blank" rel="noopener" href="assets/ccsa-nat-detection.pdf">NAT draft</a></div></li>
+      <li><span class="src">Four CCSA draft standards</span>
+        <div class="says">Two project proposals stamped with Beijing ByteDance's official company seal name Han Rui as project leader; two further drafts list him among the principal drafters. University and industry partners include BUPT, Xi'an Jiaotong University and China Unicom.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/ccsa-proposals-scheduling-nat.pdf">Stamped proposals</a><a target="_blank" rel="noopener" href="assets/ccsa-packet-scheduling.pdf">Scheduling draft</a><a target="_blank" rel="noopener" href="assets/ccsa-nat-detection.pdf">NAT draft</a><a target="_blank" rel="noopener" href="assets/ccsa-transport-feedback.pdf">Feedback draft</a><a target="_blank" rel="noopener" href="assets/ccsa-video-bitrate.pdf">Bitrate draft</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R3</span><span class="rtitle">Research and patents</span></div>
-    <p class="rclaim">“18 China and U.S. patents, four as first or sole inventor … RMB 3 million under China's National Key R&amp;D Program (2022–2025) … the USENIX NSDI 2026 Best Paper Award, with five further papers …”</p>
+  <div class="rgroup" id="innovation-r3">
+    <div class="rtop"><span class="rid">R3</span><span class="rtitle">Research and recognition</span></div>
     <ul class="evlist">
-      <li><span class="src">NSDI '26 Best Paper Award — certificate and USENIX public record (filed under Awards · R1).</span></li>
-      <li><span class="src">National Key R&amp;D Program — official approval, annex and closing self-evaluation.</span>
-        <div class="says">Approval 1 Nov 2022 — project 2022YFB2901700, led by BUPT, RMB 3.0M central-government funding, 2022.11–2025.10. Ray Han led the industry side of the project. The closing record lists Han Rui among the inventors on four of the project's patent applications, and describes the project's simulation platform as built “based on the real-time video transmission framework from the real production network”.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/nkrp-grant-approval.pdf">Approval</a><a target="_blank" rel="noopener" href="assets/nkrp-approval-annex.pdf">Annex</a><a target="_blank" rel="noopener" href="assets/nkrp-self-evaluation-excerpts.pdf">Excerpts</a><a target="_blank" rel="noopener" href="assets/nkrp-closing-self-evaluation-2026.pdf">Full text</a></div></li>
-      <li><span class="src">Patent list — official record per patent.</span>
-        <div class="says">Granted: CN115134254B and CN114995976B (both first inventor) and CN118828101B, with seven pending applications.</div>
+      <li><span class="src">NSDI Best Paper Award</span>
+        <div class="says">Certificate and public records are indexed under <a href="#awards-r1">Awards R1</a>.</div></li>
+      <li><span class="src">National Key R&amp;D Programme</span>
+        <div class="says">RMB 3 million project, 2022–2025. The closing report names Rui Han (韩锐) in the PScheduler research output and related patent records.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/nkrp-self-evaluation-excerpts.pdf">Evidence excerpts</a><a target="_blank" rel="noopener" href="assets/nkrp-grant-approval.pdf">Grant approval</a></div></li>
+      <li><span class="src">Patent record</span>
+        <div class="says">Complete 18-record list, including four as first or sole inventor, with patent-record and search links.</div>
         <div class="lnk"><a target="_blank" rel="noopener" href="assets/patents.html">Patent list</a></div></li>
-      <li><span class="src">The five further team papers — works list with Ray Han's authorship roles, and venue records.</span>
-        <div class="says">Horizon at SIGCOMM '26, where Ray Han is corresponding author, and RLive at EuroSys '26. A community reading-group session and a Bilibili replay cover HyperEdge.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://ray-han.com/work">ray-han.com/work</a><a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=ABaS0TQAAAAJ&amp;hl=en">Google Scholar</a><a target="_blank" rel="noopener" href="https://orcid.org/0009-0004-0603-3492">ORCID</a><a target="_blank" rel="noopener" href="assets/web/ray-han-work.png">Screenshot</a><a target="_blank" rel="noopener" href="https://conferences.sigcomm.org/sigcomm/2026/">SIGCOMM '26</a><a target="_blank" rel="noopener" href="assets/web/sigcomm2026.png">Screenshot</a><a target="_blank" rel="noopener" href="https://dl.acm.org/doi/10.1145/3767295.3769360">RLive, ACM</a><a target="_blank" rel="noopener" href="https://2026.eurosys.org/papers.html">EuroSys accepted</a><a target="_blank" rel="noopener" href="assets/web/rlive-eurosys26-slides.pdf">Slides</a><a target="_blank" rel="noopener" href="https://everythinginsigcomm.group/t/ep32-hyperedge-an-edge-cdn-infrastructure-for-cost-efficient-video-streaming/560">Reading group</a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1KqTF6YE5P/">Bilibili replay</a></div></li>
+      <li><span class="src">Research publications</span>
+        <div class="says">Seven team publications, with Ray Han's role, official records and available PDFs.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/publications.html">Publication list</a></div></li>
+      <li><span class="src">Ray Han's invited HyperEdge talk</span>
+        <div class="says">The official programme lists Ray Han's talk on edge multimedia cost optimisation.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="https://www.bagevent.com/event/8663292">Official programme</a><a target="_blank" rel="noopener" href="assets/web/lvscon2023-hanrui.png">Local archive</a></div></li>
     </ul>
   </div>
 </section>
 
 <!-- ============ 2 MENTORING ============ -->
 <section id="mentoring">
-  <h2 class="sec">Mentoring and coaching</h2>
-  <hr class="secline">
+  <div class="sechead">
+    <div><div class="category">Professional impact</div><h2 class="sec">Mentoring and coaching</h2></div>
+    <div class="previous">Previous application: <strong>Met</strong> · Xie letter not supplied. Above with it.</div>
+  </div>
 
   <details class="stmt"><summary>Submitted statement</summary><div class="body">
     <h3>Situation</h3>
@@ -177,126 +216,45 @@
     <p>I built the ByteDance team by recruiting across adjacent fields, conducting more than a hundred interviews in my first year. I trained media researchers in network transport and transport engineers in distributed delivery. I gave each engineer a distinct part of HyperEdge to own. Over several years, I worked alongside them, guiding their technical work and reviewing their progress until they could set technical direction independently. I also sponsored their promotions.</p>
     <p>I established long-running partnerships with universities including Fudan, BUPT, HKU and NUS. Through these partnerships, I matched graduate researchers to production problems and guided them in framing research questions, choosing methods and writing papers.</p>
     <h3>Result</h3>
-    <p><span class="rhead">R1 Engineering leadership.</span> Three engineers I mentored over several years reached Staff Engineer, ByteDance's senior technical-lead grade. Each now leads a sub-team responsible for one of the edge-media, edge-infrastructure and edge-protocol subsystems. More than ten others advanced into senior roles across the platform.</p>
-    <p><span class="rhead">R2 Research career progression.</span> Dr Wei Dehui spent two years under my supervision during her BUPT doctorate. Her work led directly to the HyperEdge paper, on which she is first author. On my recommendation, she took a postdoctoral fellowship at NUS and subsequently became a researcher at Microsoft Research Asia.</p>
-    <p><span class="rhead">R3 Research output.</span> I co-supervised more than ten graduate researchers through ByteDance's university partnerships. Their work on HyperEdge and related network topics appeared at SIGCOMM, NSDI, INFOCOM, IEEE Network and EuroSys.</p>
+    <p><span class="rhead"><a href="#mentoring-r1">R1 Engineering leadership.</a></span> Three engineers I mentored over several years reached Staff Engineer, ByteDance's senior technical-lead grade. Each now leads a sub-team responsible for one of the edge-media, edge-infrastructure and edge-protocol subsystems. More than ten others advanced into senior roles across the platform.</p>
+    <p><span class="rhead"><a href="#mentoring-r2">R2 Research career progression.</a></span> Dr Wei Dehui spent two years under my supervision during her BUPT doctorate. Her work led directly to the HyperEdge paper, on which she is first author. On my recommendation, she took a postdoctoral fellowship at NUS and subsequently became a researcher at Microsoft Research Asia.</p>
+    <p><span class="rhead"><a href="#mentoring-r3">R3 Research output.</a></span> I co-supervised more than ten graduate researchers through ByteDance's university partnerships. Their work on HyperEdge and related network topics appeared at SIGCOMM, NSDI, INFOCOM, IEEE Network and EuroSys.</p>
   </div></details>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R1</span><span class="rtitle">Engineering leadership</span></div>
-    <p class="rclaim">“Three engineers I mentored … reached Staff Engineer … More than ten others advanced into senior roles across the platform.”</p>
+  <div class="rgroup" id="mentoring-r1">
+    <div class="rtop"><span class="rid">R1</span><span class="rtitle">Engineering progression</span></div>
     <ul class="evlist">
-      <li><span class="src">Support letter — Zhendong Xie, Senior Engineer, ByteDance, Ray Han's direct report for 4.5 years. Signed original held — PDF to be filed.</span>
-        <div class="says quote">“Mr. Han worked out a promotion roadmap with me, set clear milestones, and reviewed my progress regularly … he helped build support for my case across company promotion committees, and my promotion went through. Other engineers across the group experienced the same mentorship and advanced under his guidance.”</div>
-        <div class="lnk"><details class="ltr" style="display:inline"><summary style="cursor:pointer;font-size:13px;color:var(--accent);padding:0 0 0 6px">Full letter</summary><div class="body" style="white-space:pre-wrap;font-family:var(--serif);font-size:13px;padding:8px 0 4px 6px">Zhendong Xie
-Senior Engineer, China Commerce and Advertising
-ByteDance
-Fangheng Fashion Center, North 3rd Ring Road
-Haidian District, Beijing, China
-xiezhendong@bytedance.com
-
-December 3, 2026
-
-To Whom It May Concern:
-
-Re: Letter of Support for Mr. Ray Han
-
-I am writing in support of Mr. Ray Han. I am currently a Senior Engineer in China Commerce and Advertising at ByteDance, where I have worked for seven years. From 2022 to 2026, I worked in the HyperEdge Networking group and reported directly to him for four and a half years. My work focused on network probing and measurement, and I worked directly with him on the systems and research detailed in this letter.
-
-As a Principal Engineer at ByteDance, Mr. Han directs the overall system architecture, edge-node development, and resource management for HyperEdge Networking. HyperEdge operates ByteDance's low-cost content delivery network, powering video-on-demand and live-streaming services for Douyin and TikTok across domestic and international markets.
-
-He innovates at the infrastructure level to unlock new capabilities. For five years, HyperEdge operated strictly as a downstream content delivery network. As ByteDance needed to monitor access quality across its global media network, Mr. Han recognized that the massive fleet of managed edge nodes close to household networks provided observation points that conventional data-center monitoring could not offer. Rather than building a separate monitoring fleet, he led our team through the architectural overhaul required to turn passive delivery nodes into active measurement vantage points. Under his guidance, we advanced our capabilities from basic ping probes to complex network-protocol, streaming-media, and bottleneck tests. This established three core capabilities for ByteDance: stability monitoring, real-time measurement, and simulated-user measurement. What began as an infrastructure refactoring grew into a dedicated engineering division that today forms the operational foundation for ByteDance's AI web-fetching systems.
-
-He translates production-scale challenges into foundational research breakthroughs. As our edge systems scaled, our team encountered production bottlenecks in scheduling and measurement that could not be resolved through routine debugging or engineering experience alone. Mr. Han recognized that these problems demanded a fundamental research approach and initiated a joint project with Professor Yiming Qiu's group at the University of Hong Kong. He defined the technical problems, walked researchers through our production constraints, and required theoretical models to be validated against deployed conditions. This work eliminated our scheduling bottlenecks and produced two major papers: Horizon at ACM SIGCOMM 2026, which I coauthored with him, and Skyline at USENIX NSDI 2026.
-
-He also partnered with the China Academy of Information and Communications Technology (CAICT) to deploy measurement probes across residential routers and set-top boxes. Capturing telemetry directly from home devices resolved a critical blind spot between server-side metrics and last-mile user experience.
-
-He develops engineers into system owners and technical leaders. Mr. Han divides the group's work into clear domains so each engineer has defined ownership and room to grow. Rather than centralizing technical authority, he encourages team members to take full responsibility for core subsystems and solve problems at the system level.
-
-In early 2023, when I was preparing for promotion from Engineer to Senior Engineer, I was not yet competitive against the standard for that level. Rather than offering vague encouragement, Mr. Han worked out a promotion roadmap with me, set clear milestones, and reviewed my progress regularly. His technical guidance helped me close the gaps in my work and take on broader architectural scope. Once I met those milestones, he helped build support for my case across company promotion committees, and my promotion went through. Other engineers across the group experienced the same mentorship and advanced under his guidance.
-
-Over the four and a half years I reported to him, Mr. Han consistently proved his ability to solve hard engineering problems at massive scale and develop the talent around him to sustain them. Based on this direct experience, I support his application without reservation.
-
-Please contact me if I can be of further assistance.
-
-Sincerely,
-
-Zhendong Xie
-Senior Engineer, China Commerce and Advertising
-ByteDance
-xiezhendong@bytedance.com</div></details></div></li>
+      <li><span class="src">Zhendong Xie signed support letter</span>
+        <div class="says">ByteDance Senior Engineer and Ray Han's direct report for 4.5 years. Gives a first-hand example of structured mentoring and promotion planning, resulting in Xie's promotion to Senior Engineer. Sent directly to the BCS Fellowship team by Xie; addresses the previous assessor's feedback.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/xie-zhendong-support-letter-2026-12.pdf">Signed letter PDF</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R2</span><span class="rtitle">Research career progression</span></div>
-    <p class="rclaim">“Dr Wei Dehui spent two years under my supervision during her BUPT doctorate … a postdoctoral fellowship at NUS and subsequently became a researcher at Microsoft Research Asia.”</p>
+  <div class="rgroup" id="mentoring-r2">
+    <div class="rtop"><span class="rid">R2–R3</span><span class="rtitle">Research mentoring</span></div>
     <ul class="evlist">
-      <li><span class="src">Support letter — Dr Dehui Wei, Researcher, Microsoft Research Asia. Signed original held — PDF to be filed.</span>
-        <div class="says quote">“He served as my direct manager for approximately two years and mentored me through the BUPT–ByteDance joint research project. He later recommended me for a postdoctoral position at the National University of Singapore (NUS) … HyperEdge, a first-authored paper of mine that received the Best Paper Award at USENIX NSDI 2026 … His mentorship directly changed the trajectory of my career.”</div>
-        <div class="lnk"><details class="ltr" style="display:inline"><summary style="cursor:pointer;font-size:13px;color:var(--accent);padding:0 0 0 6px">Full letter</summary><div class="body" style="white-space:pre-wrap;font-family:var(--serif);font-size:13px;padding:8px 0 4px 6px">Microsoft Research Asia
-T2, No. 5 Danling Street, Haidian District
-Beijing, P.R.China 100080
-Tel: (+86) 010 5917 8888
-
-12 December 2026
-
-To Whom It May Concern,
-
-Re: Letter of Support – Ray Han
-
-I am Dr. Dehui Wei, a Researcher at Microsoft Research Asia. It is my pleasure to write in support of Mr. Ray Han, who served as my manager and mentor at ByteDance from 2022 to 2026.
-
-I joined Ray Han's team at ByteDance in 2022 as a research intern while completing my PhD at Beijing University of Posts and Telecommunications (BUPT). He served as my direct manager for approximately two years and mentored me through the BUPT–ByteDance joint research project. He later recommended me for a postdoctoral position at the National University of Singapore (NUS). After I moved there, we continued working together on the NUS–ByteDance joint project, where Ray served as my industry collaborator; my postdoctoral supervision remained with my NUS faculty advisor. Across these joint projects, I transitioned from campus research to hands-on work on a real, large-scale hyper-edge multimedia network system.
-
-During my time at ByteDance, we met one to three times a week, and he set my goals in our weekly meetings. He worked closely with me on every hyper-edge paper, from the earliest idea to the final draft. He helped me decide what each paper was really about and which systems methods to use. Most of our time went into the writing, and he made sure I explained clearly what we had learned and why it mattered. These papers include "Pscheduler" at IEEE INFOCOM 2024, "Multipath Smart Preloading" in IEEE Network 2024, and "HyperEdge," a first-authored paper of mine that received the Best Paper Award at USENIX NSDI 2026. Early on, he trusted me with real responsibility, letting me lead part of the technical work and mentor master's students on my own while staying available to coach me. He also cared about my career, not just the research, and talked through every major decision with me.
-
-His mentorship directly changed the trajectory of my career. I completed my PhD at BUPT, served as a postdoctoral researcher at NUS, and am now a Researcher at Microsoft Research. The papers I published along the way grew out of the problems he gave me and the way he trained me to work through them. He also brought me into a real-time communication networks project and guided my work on it. Today, I mentor younger researchers myself in the same practical, hands-on way I learned from him.
-
-I also observed him mentoring many others. During my time there, approximately ten graduates from the BUPT–ByteDance joint programme, along with students from other university collaborations, worked under his mentorship. He helped them become stronger researchers and engineers, and their projects produced work of practical impact.
-
-I give Ray Han my strongest, unreserved support in any application or endeavor he may pursue.
-
-For any further information please feel free to contact me by email at dehuiwei@microsoft.com
-
-Best regards,
-
-Dehui Wei
-Researcher
-Microsoft Research Asia</div></details></div></li>
-      <li><span class="src">Dr Wei's homepage — independently shows the chain.</span>
-        <div class="says">Senior Researcher, Microsoft Research Asia · PhD, BUPT · postdoctoral research fellow, NUS · HyperEdge, PScheduler, Multipath Smart Preloading, HELDR.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://weidehui.github.io/">weidehui.github.io</a><a target="_blank" rel="noopener" href="assets/web/weidehui-homepage.png">Screenshot</a></div></li>
+      <li id="mentoring-r3"><span class="src">Dehui Wei signed support letter</span>
+        <div class="says">Microsoft Research Asia researcher. Confirms two years of doctoral supervision, recommendation to NUS and mentoring of approximately ten BUPT joint-programme graduates and other university researchers. Sent directly to the BCS Fellowship team by Wei; her profile and the publication record corroborate the outcomes.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/wei-dehui-support-letter-2026-12.pdf">Signed letter PDF</a><a target="_blank" rel="noopener" href="https://weidehui.github.io/">Current profile</a><a target="_blank" rel="noopener" href="assets/publications.html">Publications</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R3</span><span class="rtitle">Research output</span></div>
-    <p class="rclaim">“I co-supervised more than ten graduate researchers … appeared at SIGCOMM, NSDI, INFOCOM, IEEE Network and EuroSys.”</p>
+  <div class="rgroup action" id="mentoring-action">
+    <div class="rtop"><span class="rid">Action</span><span class="rtitle">External mentoring role</span></div>
     <ul class="evlist">
-      <li><span class="src">The Wei letter witnesses the cohort (full letter under R2 above).</span>
-        <div class="says quote">“…approximately ten graduates from the BUPT–ByteDance joint programme, along with students from other university collaborations, worked under his mentorship.”</div></li>
-      <li><span class="src">Works list with Ray Han's authorship roles marked (filed under Invention and innovation · R3).</span></li>
-    </ul>
-  </div>
-
-  <div class="rgroup action">
-    <div class="rtop"><span class="rid">Action</span><span class="rtitle">Formal external mentoring roles</span></div>
-    <p class="rclaim">“I established long-running partnerships with universities including Fudan, BUPT, HKU and NUS.”</p>
-    <ul class="evlist">
-      <li><span class="src">Fudan University industry-mentor appointment — official notice.</span>
-        <div class="says">Fudan Degree Committee notice, approved 11 Jan 2022 and issued 2 Mar 2022 with the committee seal. List row: School of Computer Science and Technology — Han Rui — Electronic Information.</div>
+      <li><span class="src">Fudan University appointment</span>
+        <div class="says">Official 2022 industry-mentor qualification for the School of Computer Science and Technology.</div>
         <div class="lnk"><a target="_blank" rel="noopener" href="assets/fudan-industry-mentor-qualification-2022.pdf">Appointment PDF</a></div></li>
-      <li><span class="src">The university collaborations surface in the record.</span>
-        <div class="says">The NUS news item on the NSDI '26 award (filed under Awards · R1), the HKU/CAS joint papers Horizon and RLive (filed under Invention and innovation · R3), and the BUPT joint programme described in the Wei letter under R2 above.</div></li>
     </ul>
   </div>
 </section>
 
 <!-- ============ 3 AWARDS ============ -->
 <section id="awards">
-  <h2 class="sec">Awards</h2>
-  <hr class="secline">
+  <div class="sechead">
+    <div><div class="category">Standing in the community</div><h2 class="sec">Awards</h2></div>
+    <div class="previous">Previous application: <strong>Insufficient evidence</strong> · follow-on impact missing</div>
+  </div>
 
   <details class="stmt"><summary>Submitted statement</summary><div class="body">
     <h3>Situation</h3>
@@ -309,67 +267,44 @@ Microsoft Research Asia</div></details></div></li>
     <p><span class="rhead">1. NYU Shanghai.</span> I delivered guest lectures in NYU Shanghai's Software Engineering course (CSCI-SHU 410) for the 2026–2027 academic year, drawing on HyperEdge's production experience.</p>
     <p><span class="rhead">2. CAICT.</span> Since December 2025, I have served as an Expert Adviser on China Mobile's 2025–2026 IP Network Quality Monitoring and Analysis Services project, providing technical review and advice.</p>
     <h3>Result</h3>
-    <p><span class="rhead">R1 Continuing academic role.</span> NYU Shanghai has also invited me to mentor undergraduate capstone projects and contribute to related course teaching, extending my academic role beyond the guest lectures.</p>
-    <p><span class="rhead">R2 Broader industry role.</span> I now advise a national carrier through CAICT alongside my engineering work at ByteDance. My assessments and recommendations have supported the project's implementation.</p>
+    <p><span class="rhead"><a href="#awards-r1">R1 Continuing academic role.</a></span> NYU Shanghai has also invited me to mentor undergraduate capstone projects and contribute to related course teaching, extending my academic role beyond the guest lectures.</p>
+    <p><span class="rhead"><a href="#awards-r2">R2 Broader industry role.</a></span> I now advise a national carrier through CAICT alongside my engineering work at ByteDance. My assessments and recommendations have supported the project's implementation.</p>
   </div></details>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R1</span><span class="rtitle">Continuing academic role</span></div>
-    <p class="rclaim">“NYU Shanghai has also invited me to mentor undergraduate capstone projects and contribute to related course teaching, extending my academic role beyond the guest lectures.”</p>
+  <div class="rgroup" id="awards-r1">
+    <div class="rtop"><span class="rid">R1</span><span class="rtitle">Award-led guest teaching</span></div>
     <ul class="evlist">
-      <li><span class="src">NSDI '26 Best Paper Award — certificate and public record.</span>
-        <div class="says quote">“…presented to Dehui Wei, Jiao Zhang, Haozhe Li, Rui Han …” — 23rd USENIX NSDI, 4 May 2026.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/nsdi26-outstanding-paper-award.pdf">Certificate PDF</a><a target="_blank" rel="noopener" href="https://www.usenix.org/conferences/best-papers">usenix.org</a><a target="_blank" rel="noopener" href="assets/web/usenix-best-papers.png">Screenshot</a><a target="_blank" rel="noopener" href="assets/web/nus-nsdi26-news.png">NUS news</a></div></li>
-      <li><span class="src">NYU Shanghai invitation letter.</span>
-        <div class="says">Prof. Lihua Xu, Professor of Practice and Area Head of Computer Science, NYU Shanghai, 18 Sep 2026 — guest lecturer, Software Engineering (CSCI-SHU 410), 2026–2027, <span class="quote">“in recognition of his USENIX NSDI 2026 Best Paper Award”</span>.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/nyush-guest-lecturer-confirmation-2026.pdf">Letter PDF</a></div></li>
+      <li><span class="src">NSDI Best Paper Award</span>
+        <div class="says">The 2026 certificate and USENIX public record name Rui Han among the HyperEdge authors.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/nsdi26-outstanding-paper-award.pdf">Certificate PDF</a><a target="_blank" rel="noopener" href="https://www.usenix.org/conferences/best-papers">USENIX record</a></div></li>
+      <li><span class="src">NYU Shanghai guest-lecturer invitation</span>
+        <div class="says">Following this recognition, NYU Shanghai invited Ray Han to teach Software Engineering in 2026–2027, explicitly citing the NSDI award and his edge-networking work.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/nyush-guest-lecturer-confirmation-2026.pdf">Invitation PDF</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R2</span><span class="rtitle">Broader industry role</span></div>
-    <p class="rclaim">“I now advise a national carrier through CAICT … My assessments and recommendations have supported the project's implementation.”</p>
+  <div class="rgroup" id="awards-r2">
+    <div class="rtop"><span class="rid">R2</span><span class="rtitle">Award-led adviser role</span></div>
     <ul class="evlist">
-      <li><span class="src">Starbeam certificate — names Han Rui first among principal completers.</span>
-        <div class="says">2025 Network Intelligent Sensing “Starbeam” Forward-Looking Innovation Application award. Winning project: ByteDance ultra-large-scale multimedia network observation and capacity-evaluation system. Awarded to: Douyin Group. <span class="quote">“Principal completers: Han Rui, Xie Zhendong, Xu Aifang, Zhang Zhiyong.”</span> Issued by CAICT's Industry and Planning Research Institute, December 2025, under its seal.</div>
+      <li><span class="src">CAICT Starbeam Award</span>
+        <div class="says">The 2025 certificate names Han Rui first of four key contributors to the winning ByteDance project.</div>
         <div class="lnk"><a target="_blank" rel="noopener" href="assets/caict-starbeam-certificate.pdf">Certificate PDF</a></div></li>
-      <li><span class="src">CAICT confirmation letter, signed by Aili Zhang, Senior Engineer, CAICT. Signed original held — PDF to be filed.</span>
-        <div class="says quote">“Mr. Han provided overall technical leadership” for the award-winning work; invited as Expert Adviser for China Mobile's project; “Since December 2025, Mr. Han has assessed the project's technical proposals … His assessments and recommendations have laid a sound foundation for the project's successful implementation.”</div>
-        <div class="lnk"><details class="ltr" style="display:inline"><summary style="cursor:pointer;font-size:13px;color:var(--accent);padding:0 0 0 6px">Full letter</summary><div class="body" style="white-space:pre-wrap;font-family:var(--serif);font-size:13px;padding:8px 0 4px 6px">[Institutional letterhead]
-
-20 November 2026
-
-Confirmation of Mr. Ray Han's Professional Engagement
-
-To Whom It May Concern:
-
-I am writing to confirm Mr. Ray Han's professional engagement with the China Academy of Information and Communications Technology (CAICT), including his leadership of ByteDance's award-winning team and his subsequent invitation to serve as an Expert Adviser. CAICT is a leading national institute affiliated with China's Ministry of Industry and Information Technology, with a national role in ICT research, policy support, and technical standards.
-
-1. In 2025, CAICT presented the Starbeam Forward-Looking Innovation Application Award to the ByteDance team. Mr. Han provided overall technical leadership for the team's work on measurement, observability, and capacity evaluation. Zhendong Xie, Aifang Xu, and Zhiyong Zhang were responsible for key technical workstreams. The award recognized the team's innovation and engineering achievements in large-scale multimedia networks.
-
-2. In recognition of the expertise demonstrated through the award-winning work, CAICT invited Mr. Han, as the team's representative, to serve as an Expert Adviser for the review of technical proposals under the IP Network Quality Monitoring and Analysis Services project for China Mobile (2025–2026). Since December 2025, Mr. Han has assessed the project's technical proposals and provided expert recommendations on improving the video experience of China Mobile's home broadband users. His assessments and recommendations have laid a sound foundation for the project's successful implementation, supporting service-quality improvement efforts in China's telecommunications sector.
-
-We appreciate the ByteDance team's support and contributions to this work, and look forward to continuing our collaboration. Please feel free to contact me if further information or confirmation is required.
-
-Sincerely,
-
-Aili Zhang
-Senior Engineer
-Department of Internet and Computing Networks
-Industry and Planning Research Institute
-China Academy of Information and Communications Technology (CAICT)
-zhangaili@caict.ac.cn</div></details></div></li>
-      <li><span class="src">Trade-media report tying the award to him by name.</span>
-        <div class="says">19 Dec 2025 report names “Han Rui, Director of Media Network Technology, Douyin Group” presenting the winning work on ultra-large-scale multimedia network observation and capacity evaluation. Readable text and the original page are archived.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/web/xingmang-report-aiaisousou.readable.md">Readable text</a><a target="_blank" rel="noopener" href="assets/web/xingmang-report-aiaisousou.original.html">Original HTML</a></div></li>
+      <li><span class="src">CAICT confirmation letter</span>
+        <div class="says">Connects Ray Han's leadership of the award-winning work to his subsequent Expert Adviser role on China Mobile's 2025–2026 network-quality project, including technical review and recommendations since December 2025.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/caict-confirmation-letter.md">Letter text</a></div><div class="note">Signed PDF to be filed.</div></li>
+      <li><span class="src">Starbeam media reports</span>
+        <div class="says">Two published reports name Han Rui presenting the winning work.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="https://tech.china.com/articles/20251219/202512191784383.html">China.com Technology</a><a target="_blank" rel="noopener" href="assets/web/xingmang-report-aiaisousou.original.html">AI Information Network archive</a></div></li>
     </ul>
   </div>
 </section>
 
 <!-- ============ 4 ENTREPRENEURSHIP ============ -->
 <section id="entrepreneurship">
-  <h2 class="sec">Entrepreneurship</h2>
-  <hr class="secline">
+  <div class="sechead">
+    <div><div class="category">Body of work</div><h2 class="sec">Entrepreneurship</h2></div>
+    <div class="previous">Previous application: <strong>Not submitted</strong></div>
+  </div>
 
   <details class="stmt"><summary>Submitted statement</summary><div class="body">
     <h3>Situation</h3>
@@ -382,81 +317,88 @@ zhangaili@caict.ac.cn</div></details></div></li>
     <p>I commercialised the platform through enterprise private-cloud deployments and a public cloud service priced by call duration. I used seed and angel funding to expand the network, grow the engineering team and deliver customer projects.</p>
     <p>After over five years of operation, I exited in 2018 through the acquisition of our technology, product and engineering team by Baijiayun (now NASDAQ: RTC).</p>
     <h3>Result</h3>
-    <p><span class="rhead">R1 National recognition.</span> LearningTech earned China's National High-Tech Enterprise accreditation in October 2017, following expert assessment of our intellectual property, R&amp;D investment and revenue from high-tech products and services.</p>
-    <p><span class="rhead">R2 Developer adoption at scale.</span> Our SDK ranked first in its field for annual downloads, establishing LearningTech as an early leader in China's WebRTC developer market. By the end of 2016, our public cloud served more than 600 registered developer organizations. Our MIT-licensed JavaScript SDK recorded over 26,000 npm downloads from its 2015 release through November 2026.</p>
-    <p><span class="rhead">R3 Commercial success.</span> The business raised RMB 8.5 million in seed and angel funding. Our paying enterprise customers included China General Technology Group and Motorola Solutions. Our online teaching service supported over 1.76 million user sessions across more than 184,000 virtual classrooms.</p>
+    <p><span class="rhead"><a href="#entrepreneurship-r1">R1 National recognition.</a></span> LearningTech earned China's National High-Tech Enterprise accreditation in October 2017, following expert assessment of our intellectual property, R&amp;D investment and revenue from high-tech products and services.</p>
+    <p><span class="rhead"><a href="#entrepreneurship-r2">R2 Developer adoption at scale.</a></span> Our SDK ranked first in its field for annual downloads, establishing LearningTech as an early leader in China's WebRTC developer market. By the end of 2016, our public cloud served more than 600 registered developer organizations. Our MIT-licensed JavaScript SDK recorded over 26,000 npm downloads from its 2015 release through November 2026.</p>
+    <p><span class="rhead"><a href="#entrepreneurship-r3">R3 Commercial success.</a></span> The business raised RMB 8.5 million in seed and angel funding. Our paying enterprise customers included China General Technology Group and Motorola Solutions. Our online teaching service supported over 1.76 million user sessions across more than 184,000 virtual classrooms.</p>
     <p class="fn">LearningTech's products were marketed as RealTimeCat and Linctime Class.</p>
   </div></details>
 
-  <div class="rgroup">
+  <div class="rgroup action" id="entrepreneurship-action">
+    <div class="rtop"><span class="rid">Action</span><span class="rtitle">Business record</span></div>
+    <ul class="evlist">
+      <li><span class="src">Founding and over five years of operation</span>
+        <div class="says">36Kr identifies Han Rui as founder and CEO and records the Hong Kong-to-Beijing business history. Together with 2016 operating records, 2017 due diligence and a May 2018 government listing, this covers over five years of operation.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="https://pitchhub.36kr.com/project/2181109992050052">36Kr company record</a><a target="_blank" rel="noopener" href="assets/web/pencilnews-2016-interview.pdf">2016 interview</a><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">2017 due diligence</a><a target="_blank" rel="noopener" href="assets/letake-tech-sme-2018.pdf">2018 government listing</a></div></li>
+      <li><span class="src">Products and social benefit</span>
+        <div class="says">The 2016 Pencil News interview describes private and public cloud services, online teaching and remote medical consultations for patients in remote areas.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/web/pencilnews-2016-interview.pdf">Pencil News interview</a></div></li>
+      <li><span class="src">Acquisition</span>
+        <div class="says">Baijiayun launched Linctime Class in 2018; later industry reporting records its acquisition of RealTimeCat's WebRTC technology and team. Baijiayun now trades on Nasdaq as RTC.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="https://www.baijiayun.com/news/detail/23.html">Product launch</a><a target="_blank" rel="noopener" href="https://www.sohu.com/a/369586434_473325">Acquisition report</a><a target="_blank" rel="noopener" href="assets/web/stcn-baijiayun-nasdaq.png">Nasdaq report archive</a></div></li>
+    </ul>
+  </div>
+
+  <div class="rgroup" id="entrepreneurship-r1">
     <div class="rtop"><span class="rid">R1</span><span class="rtitle">National recognition</span></div>
-    <p class="rclaim">“LearningTech earned China's National High-Tech Enterprise accreditation in October 2017, following expert assessment of our intellectual property, R&amp;D investment and revenue from high-tech products and services.”</p>
     <ul class="evlist">
-      <li><span class="src">National High-Tech Enterprise accreditation — certificate excerpt and independent registry record.</span>
-        <div class="says">Beijing Letake Technology Co., Ltd.; GR201711003470; issued 25 Oct 2017; three-year validity; four government seals. The registry record shows the same accreditation number.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">Excerpts PDF (p.2)</a><a target="_blank" rel="noopener" href="https://www.huaxiataike.com/company/echOhhZEXMZS7UldLg.html">Registry page</a><a target="_blank" rel="noopener" href="assets/web/huaxiataike-letac.png">Screenshot</a></div></li>
-      <li><span class="src">The official 2016 accreditation measures — what the assessment required.</span>
-        <div class="says">State Council gazette and MOST: IP ownership, R&amp;D staffing and spend thresholds, ≥60% revenue from high-tech products/services, audited filings, expert review.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://www.gov.cn/gongbao/content/2016/content_5076985.htm">Gazette</a><a target="_blank" rel="noopener" href="https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2016/201602/t20160205_123998.html">MOST</a><a target="_blank" rel="noopener" href="assets/web/govcn-accreditation-2016.png">Screenshot 1</a><a target="_blank" rel="noopener" href="assets/web/most-accreditation-2016.png">Screenshot 2</a></div></li>
+      <li><span class="src">National High-Tech Enterprise accreditation</span>
+        <div class="says">Certificate GR201711003470, issued to LearningTech's Beijing operating company on 25 October 2017. The registry record carries the same accreditation number.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">Certificate excerpt (PDF p.2)</a><a target="_blank" rel="noopener" href="assets/web/huaxiataike-letac.png">Registry archive</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
-    <div class="rtop"><span class="rid">R2</span><span class="rtitle">Developer adoption at scale</span></div>
-    <p class="rclaim">“Our SDK ranked first in its field for annual downloads … more than 600 registered developer organizations … over 26,000 npm downloads from its 2015 release through November 2026.”</p>
+  <div class="rgroup" id="entrepreneurship-r2">
+    <div class="rtop"><span class="rid">R2</span><span class="rtitle">Developer adoption</span></div>
     <ul class="evlist">
-      <li><span class="src">SDK adoption evidence — official npm statistics.</span>
-        <div class="says">13 non-overlapping annual intervals totalling 26,537 downloads to 21 Nov 2026, with 15,571 by 30 Jun 2018. MIT licence, first release 12 Sep 2015, CDN and Bower channels also listed.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-sdk-adoption-evidence-2026-11-21.pdf">SDK evidence PDF</a></div></li>
-      <li><span class="src">The public SDK repository — GitHub RTCat/realtimecatjs.</span>
-        <div class="says">“RealTimeCat JavaScript SDK”; package.json: author “LearningTech”, MIT licence, v0.4.10. The organisation also hosts a server-side package (realtimecat-node-sdk) and 42 repositories, and an external developer built a third-party .NET SDK on the platform.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://github.com/RTCat/realtimecatjs">github.com/RTCat/realtimecatjs</a><a target="_blank" rel="noopener" href="assets/web/github-realtimecatjs.png">Screenshot</a><a target="_blank" rel="noopener" href="https://github.com/orgs/RTCat/repositories">RTCat org</a><a target="_blank" rel="noopener" href="https://github.com/szoliver/RTC.Net">.NET SDK</a><a target="_blank" rel="noopener" href="assets/web/github-rtc-dotnet-thirdparty.png">.NET Screenshot</a></div></li>
-      <li><span class="src">“About 600 registered developer organisations” — Pencil News interview, 28 Oct 2016, full original text.</span>
-        <div class="says quote">“Two months into the public-cloud trial, monthly usage ran to about 8,000 hours and about 600 developer organisations had registered; RealTimeCat charges by communication duration, about RMB 1 per hour.”</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/web/pencilnews-2016-interview.pdf">Interview PDF</a></div></li>
+      <li><span class="src">Public SDK and developer adoption</span>
+        <div class="says">The SDK led its product category in annual downloads. By the end of 2016, the public cloud had over 600 registered developer organisations. The MIT-licensed JavaScript SDK has recorded over 26,000 npm downloads since 2015.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-sdk-adoption-evidence-2026-11-21.pdf">SDK evidence PDF</a><a target="_blank" rel="noopener" href="https://github.com/RTCat/realtimecatjs">GitHub repository</a><a target="_blank" rel="noopener" href="assets/web/pencilnews-2016-interview.pdf">Pencil News interview</a></div></li>
+      <li><span class="src">Independent developer integration</span>
+        <div class="says">A ShanghaiTech student team used RealTimeCat's WebRTC SDK to build OneMoreFace. Their project won the Hangzhou first prize at SegmentFault's 2015 Hackathon.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="https://github.com/ShanghaitechGeekPie/OneMoreFace">Project repository</a><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000003920404">SegmentFault report</a><a target="_blank" rel="noopener" href="assets/web/onemoreface-2015-integration.md">Archived excerpts</a></div></li>
     </ul>
   </div>
 
-  <div class="rgroup">
+  <div class="rgroup" id="entrepreneurship-r3">
     <div class="rtop"><span class="rid">R3</span><span class="rtitle">Commercial success</span></div>
-    <p class="rclaim">“The business raised RMB 8.5 million in seed and angel funding. Our paying enterprise customers included China General Technology Group and Motorola Solutions. Our online teaching service supported over 1.76 million user sessions across more than 184,000 virtual classrooms.”</p>
     <ul class="evlist">
-      <li><span class="src">Due-diligence report — audited figures, completed seed round, customer concentration.</span>
-        <div class="says">2015/2016 figures per standard unqualified audit reports (C078/C079). Seed round completed Oct 2016. Principal receivables: China General Technology Group Holdings (a central state-owned group) and Shanghai General Identity Technology Research Institute.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">Excerpts PDF</a></div></li>
-      <li><span class="src">Investment proposal, p.25 — teaching-service usage.</span>
-        <div class="says quote">“Cumulatively more than 1,764,542 user sessions have used RealTimeCat's products; cumulative classroom rooms exceed 184,498; teaching usage over the most recent 12 months totalled 49,260 hours.”</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">Excerpts PDF (p.10)</a></div></li>
-      <li><span class="src">Financing agreements — seed RMB 2.0M and angel RMB 6.5M, totalling RMB 8.5M.</span>
-        <div class="says">Signed agreements held by the applicant. Seed-round completion is documented in the due-diligence report above.</div></li>
-    </ul>
-  </div>
-
-  <div class="rgroup action">
-    <div class="rtop"><span class="rid">Action</span><span class="rtitle">The five-year record, the technology, and the 2018 exit</span></div>
-    <p class="rclaim">“I co-founded LearningTech in Hong Kong in 2013 and led it as CEO until June 2018 … After over five years of operation, I exited in 2018 through the acquisition of our technology, product and engineering team by Baijiayun (now NASDAQ: RTC).”</p>
-    <ul class="evlist">
-      <li><span class="src">The five-year record — 36Kr PitchHub company record, and the 2017 due-diligence report.</span>
-        <div class="says">36Kr, an independent platform record: “founded in Hong Kong in 2012, relocated to Beijing in 2014” and Han Rui as “founder &amp; CEO”. The registry year 2012 is the earliest bound; Ray Han dates the co-founding to 2013. The due-diligence report — cover July 2017, legal representative Han Rui, audited 2015/2016 figures — is filed under R3.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://pitchhub.36kr.com/project/2181109992050052">pitchhub.36kr.com</a><a target="_blank" rel="noopener" href="assets/web/36kr-pitchhub-rtc.png">Screenshot</a></div></li>
-      <li><span class="src">Sole-inventor patent application on in-browser video classrooms (2017).</span>
-        <div class="says">CN201710596812.0 — cross-border ultra-low-latency communication for in-browser video classrooms; sole inventor.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/patents.html">Patent list</a></div></li>
-      <li><span class="src">The products — websites rescued from dead domains, and the pricing brochure.</span>
-        <div class="says">RealTimeCat site, 10 Mar 2017: “fast, flexible, high-quality video-communication public cloud”; engineering blog, 13 Jun 2017; Linctime Class site, 17 Aug 2018: “online-education interactive live cloud-classroom solution”. Brochure pricing: “Pay by usage duration — RMB 0.01 per endpoint per minute”.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="assets/web/shishimao-wayback.png">RealTimeCat 2017</a><a target="_blank" rel="noopener" href="assets/web/blog-shishimao-wayback.png">Blog 2017</a><a target="_blank" rel="noopener" href="assets/web/linctime-wayback.png">Linctime 2018</a><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">Brochure PDF (p.9)</a></div></li>
-      <li><span class="src">The 2018 exit — four dated public records, and the acquirer's Nasdaq listing.</span>
-        <div class="says">Commit b08be57, 18 Apr 2018, adds the baijiayun.com domain to the Linctime extension · Baijiayun launches Linctime Class, 1 Aug 2018 · engineer bio: RealTimeCat WebRTC architect → built Baijiayun's WebRTC architecture · 2020 trade article naming the acquisition of RealTimeCat's technology and team. Securities Times: “Baijiayun lists on Nasdaq — the first China-based audio-video SaaS company listed in the US market”, ticker RTC.</div>
-        <div class="lnk"><a target="_blank" rel="noopener" href="https://github.com/RTCat/rtc-browser-extension/commit/b08be577194f32ef0bb8ed7ae6437a94e0d7cd4d">Commit</a><a target="_blank" rel="noopener" href="assets/web/github-commit-b08be57.png">Screenshot</a><a target="_blank" rel="noopener" href="https://www.baijiayun.com/news/detail/23.html">baijiayun.com</a><a target="_blank" rel="noopener" href="assets/web/baijiayun-lichnc-2018.png">Screenshot</a><a target="_blank" rel="noopener" href="https://www.bagevent.com/event/1479772/p/80386">Engineer bio</a><a target="_blank" rel="noopener" href="assets/web/bagevent-chencong.png">Screenshot</a><a target="_blank" rel="noopener" href="https://www.sohu.com/a/369586434_473325">sohu.com</a><a target="_blank" rel="noopener" href="assets/web/sohu-acquisition-2020.png">Screenshot</a><a target="_blank" rel="noopener" href="https://stcn.com/article/detail/762190.html">stcn.com</a><a target="_blank" rel="noopener" href="assets/web/stcn-baijiayun-nasdaq.png">Nasdaq Screenshot</a></div></li>
+      <li><span class="src">Investment and operating record</span>
+        <div class="says">Independent 2017 due-diligence and investment analysis by Zhaoyin Capital documents enterprise customers and over 1.76 million user sessions across more than 184,000 virtual classrooms. Agreements held by the applicant cover two investment rounds: RMB 2.0 million seed and RMB 6.5 million angel, totalling RMB 8.5 million.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/entrepreneurship-existing-evidence-excerpts-2026-11-21.pdf">Evidence excerpts PDF</a></div></li>
+      <li><span class="src">Enterprise projects and joint R&amp;D</span>
+        <div class="says">Company records describe projects with Motorola Solutions, Hitachi and China General Technology, plus joint WebRTC R&amp;D with Huawei.</div>
+        <div class="lnk"><a target="_blank" rel="noopener" href="assets/letake-company-profile-excerpts.pdf">Company profile excerpts</a><a target="_blank" rel="noopener" href="assets/huawei-realtimecat-rnd-note.md">Huawei R&amp;D note</a></div></li>
     </ul>
   </div>
 </section>
 
 <footer>
-  Evidence files in <a target="_blank" rel="noopener" href="assets/">assets/</a> · web records archived as full-page screenshots, 21 Nov 2026 · translations of Chinese-language originals in <a target="_blank" rel="noopener" href="assets/english-renderings.md">assets/english-renderings.md</a>.
+  <a target="_blank" rel="noopener" href="assets/">Evidence files and web archive</a> · <a target="_blank" rel="noopener" href="assets/english-renderings.md">English renderings of Chinese-language originals</a>
 </footer>
 
 </main>
 </div>
+<script>
+const openHashTarget=()=>{const t=document.getElementById(location.hash.slice(1));if(t&&t.tagName==='DETAILS')t.open=true};
+addEventListener('hashchange',openHashTarget);openHashTarget();
+
+const navLinks=[...document.querySelectorAll('nav.side a[href^="#"]')];
+const navSections=navLinks.map(a=>document.getElementById(a.hash.slice(1))).filter(Boolean);
+let navTicking=false;
+const setActiveNav=()=>{
+  const marker=scrollY+Math.min(innerHeight*.3,220);
+  let active=navSections[0];
+  for(const section of navSections){if(section.offsetTop<=marker)active=section}
+  if(innerHeight+scrollY>=document.documentElement.scrollHeight-4)active=navSections.at(-1);
+  for(const link of navLinks){
+    const selected=active&&link.hash==='#'+active.id;
+    link.classList.toggle('active',selected);
+    if(selected)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');
+  }
+  navTicking=false;
+};
+addEventListener('scroll',()=>{if(!navTicking){navTicking=true;requestAnimationFrame(setActiveNav)}},{passive:true});
+addEventListener('resize',setActiveNav);setActiveNav();
+</script>
 </body>
 </html>
