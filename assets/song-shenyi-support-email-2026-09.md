@@ -5,10 +5,10 @@
 > (application reference 995181927, September 2026). Text only — no wet signature.
 > Display text updated at the applicant's instruction (2026-11-22): current official title added,
 > departure wording removed. The email as originally sent remains in BCS records.
-> Author: has worked at ByteDance/TikTok since 2017; Senior Director of VideoArch
-> (global real-time communication and live-streaming technology, several hundred engineers);
-> later General Manager of SealSuite. Chaired the interview that hired Rui Han (March 2020).
-> Current role (applicant-confirmed 2026-11-22): Chief Architect, Enterprise AI Security Platform, TikTok.
+> Author: Chief Architect, Enterprise AI Security Platform, TikTok; has worked at ByteDance/TikTok
+> since 2017; previously led VideoArch (global real-time communication and live-streaming technology,
+> several hundred engineers) and later served as General Manager of SealSuite.
+> Chaired the interview that hired Rui Han (March 2020).
 > Public profile: https://www.linkedin.com/in/shenyi-song-62a3b56b/
 
 ---
@@ -17,7 +17,7 @@ Subject: Responsibility statement — Fellowship application of Mr Rui Han (ref 
 
 Dear Assessor Team,
 
-My name is Shenyi Song. I have worked at ByteDance (TikTok) since 2017. As Senior Director of VideoArch I led several hundred engineers in charge of the company's global real-time communication and live-streaming technology, and I later served as General Manager of SealSuite, ByteDance's enterprise AI security platform. I am now Chief Architect, Enterprise AI Security Platform, TikTok.
+My name is Shenyi Song. I am Chief Architect, Enterprise AI Security Platform, TikTok, and have worked at ByteDance (TikTok) since 2017. I led several hundred engineers in charge of the company's global real-time communication and live-streaming technology, and I later served as General Manager of SealSuite, ByteDance's enterprise AI security platform.
 
 I have known Rui Han since March 2020, when I chaired his hiring interview and decided to hire him. We then worked side by side for six years. He led HyperEdge, the edge network that carried the live-streaming traffic for the services my teams ran. I saw it support our biggest events, and I saw it bring our delivery costs down.
 
