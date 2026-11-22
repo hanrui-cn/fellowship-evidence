@@ -1,15 +1,6 @@
 # Support email — Shenyi Song ( Responsibility statement, last BCS application )
 
-> **Provenance:** recovered from the v1 archive (`bcs/v1/song-responsibility.md`, commit 312ed17).
-> Sent by Shenyi Song directly to the BCS Fellowship team by email during the last application
-> (application reference 995181927, September 2026). Text only — no wet signature.
-> Display text updated at the applicant's instruction (2026-11-22): current official title added,
-> departure wording removed. The email as originally sent remains in BCS records.
-> Author: Chief Architect, Enterprise AI Security Platform, TikTok; has worked at ByteDance/TikTok
-> since 2017; previously led VideoArch (global real-time communication and live-streaming technology,
-> several hundred engineers) and later served as General Manager of SealSuite.
-> Chaired the interview that hired Rui Han (March 2020).
-> Public profile: https://www.linkedin.com/in/shenyi-song-62a3b56b/
+> **Public profile:** https://www.linkedin.com/in/shenyi-song-62a3b56b/
 
 ---
 
