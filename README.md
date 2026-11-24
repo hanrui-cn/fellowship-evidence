@@ -14,7 +14,7 @@ dossier/
 ├── README.md                  # This file
 └── assets/
     ├── publications.html    # Seven papers, roles, venue records and local PDFs
-    ├── patents.html         # Complete 18-record patent list
+    ├── patents.html         # Complete patent list (18 filings: 3 granted, 15 pending)
     ├── papers/              # Six full papers plus the HELDR first-page record
     ├── english-renderings.md  # English renderings of Chinese-language originals
     ├── *.pdf / *.md           # Evidence documents
