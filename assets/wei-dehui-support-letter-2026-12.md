@@ -1,11 +1,9 @@
-> Dr Dehui Wei (Microsoft Research Asia) 支持信逐字镜像。申请人 2026-11-20 确认已收到签署版；签件 PDF 已入库（`wei-dehui-support-letter-2026-12.pdf`，日期 12 December 2026），以签件为准。
+> Dr Dehui Wei (Microsoft Research Asia) 支持信逐字镜像。申请人 2026-11-20 确认已收到签署版；签件 PDF 已入库（`wei-dehui-support-letter-2026-12.pdf`），以签件为准。
 
 Microsoft Research Asia
 T2, No. 5 Danling Street, Haidian District
 Beijing, P.R.China 100080
 Tel: (+86) 010 5917 8888
-
-12 December 2026
 
 To Whom It May Concern,
 

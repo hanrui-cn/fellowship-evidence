@@ -1,6 +1,6 @@
-> Letter of support from Zhendong Xie (ByteDance), dated 2026-12-03. Mirrored from `/Users/hanrui/Desktop/letter-latex/letter.tex` (LaTeX source; compiled `letter.pdf` in the same folder) on 2026-11-03. Body text reproduced verbatim; LaTeX markup converted to Markdown.
+> Letter of support from Zhendong Xie (ByteDance). Mirrored from `/Users/hanrui/Desktop/letter-latex/letter.tex` (LaTeX source; compiled `letter.pdf` in the same folder) on 2026-11-03. Body text reproduced verbatim; LaTeX markup converted to Markdown.
 >
-> Status update, 2026-11-22: the signed PDF (`xie-zhendong-support-letter-2026-12.pdf`, dated 3 December 2026) is filed. This text retains the source's wording; the signed letter is authoritative.
+> Status update, 2026-11-22: the signed PDF (`xie-zhendong-support-letter-2026-12.pdf`) is filed. This text retains the source's wording; the signed letter is authoritative.
 
 **Zhendong Xie**
 Senior Engineer, China Commerce and Advertising
@@ -8,8 +8,6 @@ ByteDance
 Fangheng Fashion Center, North 3rd Ring Road
 Haidian District, Beijing, China
 xiezhendong@bytedance.com
-
-December 3, 2026
 
 To Whom It May Concern:
 
