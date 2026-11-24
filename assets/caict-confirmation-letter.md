@@ -1,12 +1,18 @@
-# CAICT 确认函 — 中英文文本
+# CAICT 确认函 — 签字版文本
 
-> 申请人 2026-11-20 确认已签署；签件原件待归档，签署日期及最终文字以原件为准。
+> 2026-11-20 由信通院张爱丽高级工程师签署；申请人 2026-11-24 提供签件 PDF。
+> 签件：`caict-confirmation-letter-bcs-2026-11.pdf`（本目录，致 BCS）。IET 抬头签件（致 IET）正文相同，仅收件机构行不同；英文正文以签件为准。
 
-## 英文版
+## 英文版（BCS 抬头签件）
 
-[Institutional letterhead]
+**China Academy of Information and Communications Technology (CAICT)**  
+No. 52 Huayuan North Road, Haidian District, Beijing 100191, China
+
+---
 
 20 November 2026
+
+To: British Computer Society (BCS)
 
 **Confirmation of Mr. Ray Han's Professional Engagement**
 
@@ -16,13 +22,13 @@ I am writing to confirm Mr. Ray Han's professional engagement with the China Aca
 
 **1.** In 2025, CAICT presented the Starbeam Forward-Looking Innovation Application Award to the ByteDance team. Mr. Han provided overall technical leadership for the team's work on measurement, observability, and capacity evaluation. Zhendong Xie, Aifang Xu, and Zhiyong Zhang were responsible for key technical workstreams. The award recognized the team's innovation and engineering achievements in large-scale multimedia networks.
 
-**2.** In recognition of the expertise demonstrated through the award-winning work, CAICT invited Mr. Han, as the team's representative, to serve as an Expert Adviser for the review of technical proposals under the IP Network Quality Monitoring and Analysis Services project for China Mobile (2025–2026). Since December 2025, Mr. Han has assessed the project's technical proposals and provided expert recommendations on improving the video experience of China Mobile's home broadband users. His assessments and recommendations have laid a sound foundation for the project's successful implementation, supporting service-quality improvement efforts in China's telecommunications sector.
+**2.** In recognition of the expertise demonstrated through the award-winning work, CAICT invited Mr. Han, as the team's representative, to serve as an Expert Adviser for the technical proposals review under the IP Network Quality Monitoring and Analysis Services Project for China Mobile (2025–2026). Since December 2025, Mr. Han has assessed the project's technical proposals and provided expert recommendations on improving the video experience of China Mobile's home broadband users. His assessments and recommendations have laid a sound foundation for the project's successful implementation and contributed to the project's service-quality objectives.
 
-We appreciate the ByteDance team's support and contributions to this work, and look forward to continuing our collaboration. Please feel free to contact me if further information or confirmation is required.
+We appreciate the ByteDance team's support and contributions to this work, and look forward to continued collaboration. Please feel free to contact me if further information or confirmation is required.
 
 Sincerely,
 
-[Signature]
+*[Signature: 张爱丽]*
 
 Aili Zhang  
 Senior Engineer  
@@ -30,6 +36,8 @@ Department of Internet and Computing Networks
 Industry and Planning Research Institute  
 China Academy of Information and Communications Technology (CAICT)  
 zhangaili@caict.ac.cn
+
+> IET 抬头签件正文与上完全相同，仅收件机构行为 "To: The Institution of Engineering and Technology (IET)"。
 
 ---
 

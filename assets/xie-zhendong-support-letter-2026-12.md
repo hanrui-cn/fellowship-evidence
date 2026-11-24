@@ -1,6 +1,6 @@
 > Letter of support from Zhendong Xie (ByteDance), dated 2026-12-03. Mirrored from `/Users/hanrui/Desktop/letter-latex/letter.tex` (LaTeX source; compiled `letter.pdf` in the same folder) on 2026-11-03. Body text reproduced verbatim; LaTeX markup converted to Markdown.
 >
-> Status update, 2026-11-20: the applicant confirms that the signed letter has been received. The signed original has not yet been archived in this repository. This text retains the source's wording and date; the actual signed version and date remain to be checked against the original.
+> Status update, 2026-11-22: the signed PDF (`xie-zhendong-support-letter-2026-12.pdf`, dated 3 December 2026) is filed. This text retains the source's wording; the signed letter is authoritative.
 
 **Zhendong Xie**
 Senior Engineer, China Commerce and Advertising
